@@ -1,0 +1,1 @@
+python3 inference_mvp.py --resume weights/checkpoint.pth --backbone resnet50
