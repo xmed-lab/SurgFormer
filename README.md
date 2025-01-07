@@ -5,9 +5,9 @@ By Meng Lan, Xinjian Yan,  Weixin Si, Xiaomeng Li.
 ## Introduction
 * The official implementation for our paper "A New Dataset and Versatile Multi-Task Surgical Workflow Analysis Framework for Thoracoscopic Mitral Valvuloplasty".
 
-<center>
+<div align="center">
 <img src="./figs/framework.png" width="700">
-</center>
+</div>
 
 
 **Abstract.** Surgical Workflow Analysis (SWA) on videos is critical for AI-assisted intelligent surgery. Existing SWA methods primarily focus on laparoscopic surgeries, while research on complex thoracoscopy-assisted cardiac surgery remains largely unexplored. In this paper, we introduce **TMVP-SurVideo**, the first SWA video dataset for **Thoracoscopic cardiac Mitral ValvuloPlasty (TMVP)**. TMVP-SurVideo comprises 57 independent long-form surgical videos and over 429K annotated frames, covering four key tasks, namely phase and instrument recognitions, and phase and instrument anticipations. To achieve a comprehensive SWA system for TMVP and overcome the limitations of current SWA methods, we propose **SurgFormer**, the first query-based Transformer framework that simultaneously performs recognition and anticipation of surgical phases and instruments. SurgFormer uses four low-dimensional learnable task embeddings to independently decode representation embeddings for the predictions of the four tasks. During the decoding process, an information interaction module that contains the intra-frame task-level information interaction layer and the inter-frame temporal correlation learning layer is devised to operate on the task embeddings, enabling the information collaboration between tasks within each frame and temporal correlation learning of each task across frames. Besides, SurgFormer's unique architecture allows it to perform both offline and online inferences using a dynamic memory bank without model modification. Our proposed SurgFormer is evaluated on the TMVP-SurVideo and existing Cholec80 datasets to demonstrate its effectiveness on SWA
@@ -19,15 +19,15 @@ TMVP-SurVideo is the first large-scale surgical video dataset for TMVP, with fra
 <div align="center"> Comparson bwtween TMVP-SurVideo and existing SWA datasets </div>
 
 <!-- ![TMVP-SurVideo](./figs/dataset.png) -->
-<center>
+<div align="center">
 <img src="./figs/dataset.png" width="700">
-</center>
+</div>
 
 <div align="center">Overview of the phases and instruments in TMVP-SurVideo dataset.</div>
 
-<center>
+<div align="center">
 <img src="./figs/phase_tool.png" width="700">
-</center>
+</div>
 <!-- ![deformable_detr](./figs/phase_tool.png) -->
 
 
@@ -65,9 +65,9 @@ python test.py
 
 ### Dataset preparation
 
-The whole TMVP-SurVideo dataset will be released at [here]()
+Five test demo videos and the annotaions could be download at [here](https://drive.google.com/drive/folders/1s-LWohw2sstuObwnl6gcz22BQz0PCnY6?usp=drive_link)
 
-Five test videos could be download at [here]()
+The whole TMVP-SurVideo dataset will be released at [here]()
 
 * The structure of data folder is arranged as follows:
 ```
@@ -98,6 +98,9 @@ Five test videos could be download at [here]()
 ├── code
 |  ├── ......
 ```
+Generate data path information files needed for the training
+* Run ``$ get_path_labels.py``  and ``$ get_path_labels_2.py`` to generate the files needed for the training
+
 
 ### Training
 The model is trained in a distribued manner.
