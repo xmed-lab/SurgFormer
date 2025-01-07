@@ -110,6 +110,7 @@ sh train.sh
 ```
 
 ### Inference
+The trained weights of SurgFormer could be download at [here](https://drive.google.com/file/d/1_eAZXJfDXHnPzLWv2SAiMRyi78xDc3KT/view?usp=drive_link).
 
 ```bash
 sh test.sh
