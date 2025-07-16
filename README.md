@@ -3,7 +3,7 @@
 By Meng Lan, Xinjian Yan,  Weixin Si, Xiaomeng Li.
 
 ## Introduction
-* The official implementation for our paper "A New Dataset and Versatile Multi-Task Surgical Workflow Analysis Framework for Thoracoscopic Mitral Valvuloplasty".
+* The official implementation for our paper "A New Dataset and Versatile Multi-Task Surgical Workflow Analysis Framework for Thoracoscopic Mitral Valvuloplasty" in Medical Image Analysis (MIA 2025).
 
 <div align="center">
 <img src="./figs/framework.png" width="700">
@@ -65,9 +65,9 @@ python test.py
 
 ### Dataset preparation
 
-Five test demo videos and the annotaions could be download at [here](https://drive.google.com/drive/folders/1s-LWohw2sstuObwnl6gcz22BQz0PCnY6?usp=drive_link)
+<!-- Five test demo videos and the annotaions could be download at [here](https://drive.google.com/drive/folders/1s-LWohw2sstuObwnl6gcz22BQz0PCnY6?usp=drive_link) -->
 
-The whole TMVP-SurVideo dataset will be released at [here]()
+The whole TMVP-SurVideo dataset is released at [here](https://gohkust-my.sharepoint.com/:f:/g/personal/eemenglan_ust_hk/Erlg7BedObhGt22dNvwe6DcBhT0ZHXv9s8nY2wfPvzfdAg?e=1IysxD)
 
 * The structure of data folder is arranged as follows:
 ```
